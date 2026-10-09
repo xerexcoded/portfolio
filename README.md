@@ -2,6 +2,8 @@
 
 A React and TypeScript portfolio with a solar-punk visual direction, a pinned Nix development environment, and a small production Nginx container.
 
+The portfolio runs on Xenix at [http://200.97.172.197/portfolio/](http://200.97.172.197/portfolio/); its intended public address is [https://kachal.ai/portfolio/](https://kachal.ai/portfolio/). Its public resume copy omits the private contact line. The source repository has been created at [xerexcoded/portfolio](https://github.com/xerexcoded/portfolio), and publishing the source awaits explicit approval. SSH access remains unchanged as requested. `DEPLOY_ENABLED=false` keeps automatic SSH deployment disabled, and updates use the existing administrator connection. No private deployment key has been uploaded to GitHub.
+
 ## Development
 
 ```sh
@@ -49,7 +51,7 @@ PORTFOLIO_PORT=8088 VITE_BASE_PATH=/portfolio/ ./deploy/deploy.sh xerexcoded@200
 
 This uploads a new release directory, builds it before replacing the running service, and waits for its health check. The local `xenix` name is a shell alias for `ssh xerexcoded@200.97.172.197`; use the explicit address in scripts. No files in earlier release directories are deleted. The isolated public route is `http://200.97.172.197/portfolio/`, with Ring of Fire's existing routes preserved.
 
-For automatic deployment:
+The automatic deployment workflow is prepared but disabled. The module does not change SSH `AllowUsers`; Xenix currently permits only the existing administrator, so the separate deployment identity cannot log in. Do not enable this workflow while preserving that access policy. If automatic deployment is authorized in a future configuration:
 
 1. Publish this repository with a `main` branch.
 2. Copy `deploy/nixos-portfolio.nix` and `deploy/server-deploy.sh` into `/etc/nixos/modules/portfolio/` as `default.nix` and `server-deploy.sh`.

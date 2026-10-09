@@ -5,6 +5,8 @@ let
   deploymentPublicKey = "";
 in
 {
+  # Keep the host's SSH access policy unchanged. Automatic deployment stays
+  # disabled unless this identity is already permitted by that policy.
   users.groups.portfolio-deploy = { };
   users.users.portfolio-deploy = {
     isSystemUser = true;
