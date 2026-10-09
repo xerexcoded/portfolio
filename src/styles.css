@@ -100,6 +100,7 @@ button {
   align-items: center;
   gap: 40px;
   padding-inline: 56px;
+  background: #f2f3ea;
   border-bottom: 1px solid #435b321c;
   position: absolute;
   top: 0;
@@ -173,11 +174,13 @@ button {
   display: none;
 }
 .hero {
+  --hero-inset: 56px;
+  --hero-copy-width: 540px;
   position: relative;
   min-height: 760px;
   height: min(900px, 100svh);
   overflow: hidden;
-  background: #eeeee4;
+  background: #f2f3ea;
   isolation: isolate;
 }
 .hero-image {
@@ -194,18 +197,17 @@ button {
   inset: 0;
   background: linear-gradient(
     90deg,
-    #f2f3eae8 0%,
-    #f2f3eacf 25%,
-    #f2f3ea48 45%,
-    transparent 65%
+    #f2f3ea 0,
+    #f2f3ea calc(var(--hero-inset) + var(--hero-copy-width)),
+    transparent calc(var(--hero-inset) + var(--hero-copy-width) + 160px)
   );
   z-index: -2;
 }
 .hero-content {
   position: absolute;
-  left: 56px;
+  left: var(--hero-inset);
   top: clamp(150px, 19vh, 208px);
-  max-width: 540px;
+  max-width: var(--hero-copy-width);
 }
 .hero-eyebrow {
   font-size: 9px;
@@ -281,7 +283,8 @@ button {
 }
 .hero-bottom {
   position: absolute;
-  inset-inline: 56px;
+  inset-inline: 0;
+  padding-inline: var(--hero-inset);
   bottom: 0;
   height: 67px;
   border-top: 1px solid #32472833;
@@ -290,6 +293,7 @@ button {
   justify-content: space-between;
   font: 8px var(--mono);
   letter-spacing: 1.3px;
+  background: #f2f3ea;
 }
 .hero-bottom a {
   display: flex;
