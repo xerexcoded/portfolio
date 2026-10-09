@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  portfolio:
+    name: React checks and production container
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v31.11.1
+      - name: Install locked dependencies with Nix
+        run: nix develop --command npm ci
+      - name: Focused portfolio tests
+        run: nix develop --command npm test
+      - name: Typecheck and production build
+        run: nix develop --command npm run build
+      - name: Validate Compose model
+        run: docker compose config --quiet
+      - name: Build production container
+        run: docker build --build-arg VITE_BASE_PATH=/portfolio/ --tag arnav-portfolio:ci .
+      - name: Smoke test production container
+        run: |
+          docker network create portfolio-ci
+          docker run --detach --name portfolio-ci --network portfolio-ci --read-only \
+            --tmpfs /tmp:size=16m,mode=1777 --cap-drop ALL \
+            --security-opt no-new-privileges:true \
+            --publish 127.0.0.1:18080:8080 arnav-portfolio:ci
+          docker run --detach --name portfolio-ci-proxy --network portfolio-ci \
+            --publish 127.0.0.1:18081:8080 \
+            --volume "$PWD/deploy/Caddyfile.smoke:/etc/caddy/Caddyfile:ro" \
+            caddy:2.11.4-alpine@sha256:6aeddd44c3078b0f9a35206472a11420648a79c184603ef95957d0a20044cb2b
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:18080/healthz; then
+              break
+            fi
+            if [ "$attempt" -eq 30 ]; then
+              echo "Portfolio container did not become healthy." >&2
+              exit 1
+            fi
+            sleep 1
+          done
+          nix develop --command node deploy/smoke.mjs http://127.0.0.1:18081/portfolio/
+      - name: Container logs and cleanup
+        if: always()
+        run: |
+          docker logs portfolio-ci 2>/dev/null || true
+          docker logs portfolio-ci-proxy 2>/dev/null || true
+          docker rm --force portfolio-ci-proxy 2>/dev/null || true
+          docker rm --force portfolio-ci 2>/dev/null || true
+          docker network rm portfolio-ci 2>/dev/null || true

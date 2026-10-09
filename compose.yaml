@@ -1,0 +1,31 @@
+name: ${COMPOSE_PROJECT_NAME:-arnav-portfolio}
+
+services:
+  portfolio:
+    image: ${PORTFOLIO_IMAGE:-arnav-portfolio:local}
+    build:
+      context: .
+      args:
+        VITE_BASE_PATH: ${VITE_BASE_PATH:-/}
+    restart: unless-stopped
+    ports:
+      - "${PORTFOLIO_BIND:-127.0.0.1}:${PORTFOLIO_PORT:-8080}:8080"
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,mode=1777
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 64m
+    pids_limit: 64
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://127.0.0.1:8080/healthz"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

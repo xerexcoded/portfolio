@@ -1,0 +1,394 @@
+[
+  {
+    "name": "pplx-cli",
+    "description": "A powerful command-line interface for various LLM providers with LLM Wiki. Built with ❤️ for developers who need lightning-fast semantic search capabilities.",
+    "language": "Python",
+    "url": "https://github.com/xerexcoded/pplx-cli",
+    "archived": false
+  },
+  {
+    "name": "ring-of-fire",
+    "description": "Educating people about the Ring of Fire",
+    "language": "TypeScript",
+    "url": "https://github.com/xerexcoded/ring-of-fire",
+    "archived": false
+  },
+  {
+    "name": "xikoi",
+    "description": "TUI for Ollama on apple silicon Macs",
+    "language": "Rust",
+    "url": "https://github.com/xerexcoded/xikoi",
+    "archived": false
+  },
+  {
+    "name": "homebrew-tap",
+    "description": "Homebrew formulas for Xikoi",
+    "language": "Ruby",
+    "url": "https://github.com/xerexcoded/homebrew-tap",
+    "archived": false
+  },
+  {
+    "name": "kadoer",
+    "description": "",
+    "language": "HTML",
+    "url": "https://github.com/xerexcoded/kadoer",
+    "archived": false
+  },
+  {
+    "name": "pplx-cli-landing",
+    "description": "",
+    "language": "TypeScript",
+    "url": "https://github.com/xerexcoded/pplx-cli-landing",
+    "archived": false
+  },
+  {
+    "name": "agentui",
+    "description": "",
+    "language": "Other",
+    "url": "https://github.com/xerexcoded/agentui",
+    "archived": false
+  },
+  {
+    "name": "Aqua",
+    "description": "",
+    "language": "Other",
+    "url": "https://github.com/xerexcoded/Aqua",
+    "archived": false
+  },
+  {
+    "name": "cc_mac_stress",
+    "description": "Stress test you apple silicon macbook",
+    "language": "Python",
+    "url": "https://github.com/xerexcoded/cc_mac_stress",
+    "archived": false
+  },
+  {
+    "name": "katxchal-chat",
+    "description": "",
+    "language": "TypeScript",
+    "url": "https://github.com/xerexcoded/katxchal-chat",
+    "archived": false
+  },
+  {
+    "name": "w1-agent-ui",
+    "description": "",
+    "language": "TypeScript",
+    "url": "https://github.com/xerexcoded/w1-agent-ui",
+    "archived": false
+  },
+  {
+    "name": "pyserver",
+    "description": "",
+    "language": "Python",
+    "url": "https://github.com/xerexcoded/pyserver",
+    "archived": false
+  },
+  {
+    "name": "rusty",
+    "description": "",
+    "language": "Nix",
+    "url": "https://github.com/xerexcoded/rusty",
+    "archived": false
+  },
+  {
+    "name": "kafkaesque",
+    "description": "learning kafka",
+    "language": "Java",
+    "url": "https://github.com/xerexcoded/kafkaesque",
+    "archived": false
+  },
+  {
+    "name": "nixtalk",
+    "description": "",
+    "language": "Other",
+    "url": "https://github.com/xerexcoded/nixtalk",
+    "archived": false
+  },
+  {
+    "name": "springlearning",
+    "description": "Learning to be alive",
+    "language": "Java",
+    "url": "https://github.com/xerexcoded/springlearning",
+    "archived": false
+  },
+  {
+    "name": "Terrfaformstuff",
+    "description": "just trying to learn terraform",
+    "language": "HCL",
+    "url": "https://github.com/xerexcoded/Terrfaformstuff",
+    "archived": false
+  },
+  {
+    "name": "todostylex",
+    "description": "todoapp using stylex",
+    "language": "JavaScript",
+    "url": "https://github.com/xerexcoded/todostylex",
+    "archived": false
+  },
+  {
+    "name": "wireless",
+    "description": "wireless debugging is good",
+    "language": "Kotlin",
+    "url": "https://github.com/xerexcoded/wireless",
+    "archived": false
+  },
+  {
+    "name": "xetube",
+    "description": "",
+    "language": "JavaScript",
+    "url": "https://github.com/xerexcoded/xetube",
+    "archived": false
+  },
+  {
+    "name": "Xhatgpt",
+    "description": "Just trying to use Chatgpt api",
+    "language": "JavaScript",
+    "url": "https://github.com/xerexcoded/Xhatgpt",
+    "archived": false
+  },
+  {
+    "name": "xodes",
+    "description": "Xodes",
+    "language": "JavaScript",
+    "url": "https://github.com/xerexcoded/xodes",
+    "archived": false
+  },
+  {
+    "name": "cljgen",
+    "description": "",
+    "language": "Clojure",
+    "url": "https://github.com/xerexcoded/cljgen",
+    "archived": false
+  },
+  {
+    "name": "distro_hop_dots",
+    "description": "",
+    "language": "Python",
+    "url": "https://github.com/xerexcoded/distro_hop_dots",
+    "archived": false
+  },
+  {
+    "name": "mandlebrot_rust",
+    "description": "Visual MATH",
+    "language": "Rust",
+    "url": "https://github.com/xerexcoded/mandlebrot_rust",
+    "archived": false
+  },
+  {
+    "name": "warpstuff",
+    "description": "normie testing",
+    "language": "Rust",
+    "url": "https://github.com/xerexcoded/warpstuff",
+    "archived": false
+  },
+  {
+    "name": "amazon_scraper_api",
+    "description": "",
+    "language": "JavaScript",
+    "url": "https://github.com/xerexcoded/amazon_scraper_api",
+    "archived": false
+  },
+  {
+    "name": "cancerfetchsan",
+    "description": "Sys Fetch program in rust and fun ofc",
+    "language": "Rust",
+    "url": "https://github.com/xerexcoded/cancerfetchsan",
+    "archived": false
+  },
+  {
+    "name": "covweed",
+    "description": "",
+    "language": "Rust",
+    "url": "https://github.com/xerexcoded/covweed",
+    "archived": false
+  },
+  {
+    "name": "crud_curd",
+    "description": "",
+    "language": "JavaScript",
+    "url": "https://github.com/xerexcoded/crud_curd",
+    "archived": false
+  },
+  {
+    "name": "crypto_real_time",
+    "description": "Don't visit .",
+    "language": "JavaScript",
+    "url": "https://github.com/xerexcoded/crypto_real_time",
+    "archived": false
+  },
+  {
+    "name": "dashboard1729",
+    "description": "",
+    "language": "JavaScript",
+    "url": "https://github.com/xerexcoded/dashboard1729",
+    "archived": false
+  },
+  {
+    "name": "egg_DFA",
+    "description": "Just implementing a simple DFA , idk :[",
+    "language": "Rust",
+    "url": "https://github.com/xerexcoded/egg_DFA",
+    "archived": false
+  },
+  {
+    "name": "mauview",
+    "description": "junya",
+    "language": "Rust",
+    "url": "https://github.com/xerexcoded/mauview",
+    "archived": false
+  },
+  {
+    "name": "misc_backend",
+    "description": "",
+    "language": "CSS",
+    "url": "https://github.com/xerexcoded/misc_backend",
+    "archived": false
+  },
+  {
+    "name": "misc_python",
+    "description": "misc",
+    "language": "Python",
+    "url": "https://github.com/xerexcoded/misc_python",
+    "archived": false
+  },
+  {
+    "name": "mojakRkiKorbo",
+    "description": "jibon ta mojak na hole ki",
+    "language": "Rust",
+    "url": "https://github.com/xerexcoded/mojakRkiKorbo",
+    "archived": false
+  },
+  {
+    "name": "moogle-docs",
+    "description": "Rich Text editor with TailwindCSS , NEXTjs and firebase",
+    "language": "JavaScript",
+    "url": "https://github.com/xerexcoded/moogle-docs",
+    "archived": false
+  },
+  {
+    "name": "myneuvim",
+    "description": "",
+    "language": "Vim script",
+    "url": "https://github.com/xerexcoded/myneuvim",
+    "archived": false
+  },
+  {
+    "name": "nation-ranking",
+    "description": "Ranking Nations using area, population and gini",
+    "language": "JavaScript",
+    "url": "https://github.com/xerexcoded/nation-ranking",
+    "archived": false
+  },
+  {
+    "name": "neovim_chad_edition1",
+    "description": "nvim congig",
+    "language": "Lua",
+    "url": "https://github.com/xerexcoded/neovim_chad_edition1",
+    "archived": false
+  },
+  {
+    "name": "newsstuffbutfromCLI",
+    "description": "North East West South",
+    "language": "Makefile",
+    "url": "https://github.com/xerexcoded/newsstuffbutfromCLI",
+    "archived": false
+  },
+  {
+    "name": "odin-weather",
+    "description": "",
+    "language": "JavaScript",
+    "url": "https://github.com/xerexcoded/odin-weather",
+    "archived": false
+  },
+  {
+    "name": "orgy_org",
+    "description": "ekke ekke",
+    "language": "Other",
+    "url": "https://github.com/xerexcoded/orgy_org",
+    "archived": false
+  },
+  {
+    "name": "pikachu",
+    "description": "pika pee",
+    "language": "Jupyter Notebook",
+    "url": "https://github.com/xerexcoded/pikachu",
+    "archived": false
+  },
+  {
+    "name": "Pokebook",
+    "description": "PIKACHUYUUUU",
+    "language": "JavaScript",
+    "url": "https://github.com/xerexcoded/Pokebook",
+    "archived": false
+  },
+  {
+    "name": "pokechan",
+    "description": "created react app ",
+    "language": "JavaScript",
+    "url": "https://github.com/xerexcoded/pokechan",
+    "archived": false
+  },
+  {
+    "name": "rust-tui-shizz",
+    "description": "RUST TUI APP",
+    "language": "Rust",
+    "url": "https://github.com/xerexcoded/rust-tui-shizz",
+    "archived": false
+  },
+  {
+    "name": "rust_shit_algo",
+    "description": "",
+    "language": "Rust",
+    "url": "https://github.com/xerexcoded/rust_shit_algo",
+    "archived": false
+  },
+  {
+    "name": "rusty_chat_server",
+    "description": "uwu ",
+    "language": "Rust",
+    "url": "https://github.com/xerexcoded/rusty_chat_server",
+    "archived": false
+  },
+  {
+    "name": "rustygrep",
+    "description": "",
+    "language": "Makefile",
+    "url": "https://github.com/xerexcoded/rustygrep",
+    "archived": false
+  },
+  {
+    "name": "shellhero",
+    "description": "Shell is the hero. A collection of nice shell scripts that make the life simple ",
+    "language": "Shell",
+    "url": "https://github.com/xerexcoded/shellhero",
+    "archived": false
+  },
+  {
+    "name": "simple-dict",
+    "description": "just a dictionary for English , Hindi and a few more languages",
+    "language": "JavaScript",
+    "url": "https://github.com/xerexcoded/simple-dict",
+    "archived": false
+  },
+  {
+    "name": "stock_price",
+    "description": "shell script to stonkyyy 💸",
+    "language": "Shell",
+    "url": "https://github.com/xerexcoded/stock_price",
+    "archived": false
+  },
+  {
+    "name": "xemonjee",
+    "description": "sorta lang in rust",
+    "language": "Rust",
+    "url": "https://github.com/xerexcoded/xemonjee",
+    "archived": false
+  },
+  {
+    "name": "xeovim",
+    "description": "",
+    "language": "Lua",
+    "url": "https://github.com/xerexcoded/xeovim",
+    "archived": false
+  }
+]

@@ -1,0 +1,6 @@
+# Add this site block to Xenix's existing native Caddy configuration.
+# Replace the hostname and use the same PORTFOLIO_PORT as compose.yaml.
+portfolio.example.com {
+    encode zstd gzip
+    reverse_proxy 127.0.0.1:8088
+}

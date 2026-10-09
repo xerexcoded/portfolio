@@ -1,0 +1,7 @@
+:8080 {
+    redir /portfolio /portfolio/ 308
+    handle_path /portfolio/* {
+        reverse_proxy portfolio-ci:8080
+    }
+    respond 404
+}
