@@ -2,7 +2,7 @@
 
 A React and TypeScript portfolio with a solar-punk visual direction, a pinned Nix development environment, and a small production Nginx container.
 
-The portfolio is live at [https://kachal.ai/portfolio](https://kachal.ai/portfolio). It runs in a container on Xenix, with HTTPS forwarded through the existing Kachal Vercel project; [routing details](deploy/vercel-routing.md) document the scoped rules. The domain's existing redirect to `www.kachal.ai` is preserved. Its public resume copy omits the private contact line. The source repository has been created at [xerexcoded/portfolio](https://github.com/xerexcoded/portfolio), and publishing the source awaits explicit approval. SSH access remains unchanged as requested. `DEPLOY_ENABLED=false` keeps automatic SSH deployment disabled, and updates use the existing administrator connection. No private deployment key has been uploaded to GitHub.
+The portfolio is live at [https://kachal.ai/portfolio](https://kachal.ai/portfolio). It runs in a container on Xenix, with HTTPS forwarded through the existing Kachal Vercel project; [routing details](deploy/vercel-routing.md) document the scoped rules. The domain's existing redirect to `www.kachal.ai` is preserved. Its public resume copy omits the private contact line. Source is published at [xerexcoded/portfolio](https://github.com/xerexcoded/portfolio). SSH access remains unchanged as requested. `DEPLOY_ENABLED=false` keeps automatic SSH deployment disabled, and updates use the existing administrator connection. No private deployment key has been uploaded to GitHub.
 
 ## Development
 
