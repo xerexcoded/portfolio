@@ -825,7 +825,7 @@ function App() {
               </span>
               <div className="social-links">
                 <ExternalLink href={github}>GitHub</ExternalLink>
-                <ExternalLink href="https://www.linkedin.com/in/arnav-banerjee">
+                <ExternalLink href="https://www.linkedin.com/in/arnav-banerjee-66b0b5197/">
                   LinkedIn
                 </ExternalLink>
               </div>
